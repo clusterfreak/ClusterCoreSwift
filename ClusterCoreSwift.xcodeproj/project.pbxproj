@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E93D5BA024B75409005ABF39 /* ClusterCoreSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93D5B9F24B75409005ABF39 /* ClusterCoreSwift.swift */; };
+		E93D5BB224B7579D005ABF39 /* PointPixel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93D5BAC24B7579C005ABF39 /* PointPixel.swift */; };
+		E93D5BB324B7579D005ABF39 /* PossibilisticCMeans.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93D5BAD24B7579D005ABF39 /* PossibilisticCMeans.swift */; };
+		E93D5BB424B7579D005ABF39 /* FuzzyCMeans.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93D5BAE24B7579D005ABF39 /* FuzzyCMeans.swift */; };
+		E93D5BB524B7579D005ABF39 /* Point2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93D5BAF24B7579D005ABF39 /* Point2D.swift */; };
+		E93D5BB724B7579D005ABF39 /* Java.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93D5BB124B7579D005ABF39 /* Java.swift */; };
+		E93EDD6B24BB1770007E4B1C /* ClusterCoreSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93EDD6A24BB1770007E4B1C /* ClusterCoreSwift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +29,12 @@
 
 /* Begin PBXFileReference section */
 		E93D5B9C24B75409005ABF39 /* libClusterCoreSwift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libClusterCoreSwift.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		E93D5B9F24B75409005ABF39 /* ClusterCoreSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClusterCoreSwift.swift; sourceTree = "<group>"; };
+		E93D5BAC24B7579C005ABF39 /* PointPixel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointPixel.swift; sourceTree = "<group>"; };
+		E93D5BAD24B7579D005ABF39 /* PossibilisticCMeans.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PossibilisticCMeans.swift; sourceTree = "<group>"; };
+		E93D5BAE24B7579D005ABF39 /* FuzzyCMeans.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FuzzyCMeans.swift; path = ../../../temp/FuzzyCMeans.swift; sourceTree = "<group>"; };
+		E93D5BAF24B7579D005ABF39 /* Point2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point2D.swift; sourceTree = "<group>"; };
+		E93D5BB124B7579D005ABF39 /* Java.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Java.swift; sourceTree = "<group>"; };
+		E93EDD6A24BB1770007E4B1C /* ClusterCoreSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClusterCoreSwift.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +67,12 @@
 		E93D5B9E24B75409005ABF39 /* ClusterCoreSwift */ = {
 			isa = PBXGroup;
 			children = (
-				E93D5B9F24B75409005ABF39 /* ClusterCoreSwift.swift */,
+				E93D5BAE24B7579D005ABF39 /* FuzzyCMeans.swift */,
+				E93D5BB124B7579D005ABF39 /* Java.swift */,
+				E93D5BAF24B7579D005ABF39 /* Point2D.swift */,
+				E93D5BAC24B7579C005ABF39 /* PointPixel.swift */,
+				E93D5BAD24B7579D005ABF39 /* PossibilisticCMeans.swift */,
+				E93EDD6A24BB1770007E4B1C /* ClusterCoreSwift.swift */,
 			);
 			path = ClusterCoreSwift;
 			sourceTree = "<group>";
@@ -120,7 +135,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E93D5BA024B75409005ABF39 /* ClusterCoreSwift.swift in Sources */,
+				E93EDD6B24BB1770007E4B1C /* ClusterCoreSwift.swift in Sources */,
+				E93D5BB524B7579D005ABF39 /* Point2D.swift in Sources */,
+				E93D5BB724B7579D005ABF39 /* Java.swift in Sources */,
+				E93D5BB224B7579D005ABF39 /* PointPixel.swift in Sources */,
+				E93D5BB324B7579D005ABF39 /* PossibilisticCMeans.swift in Sources */,
+				E93D5BB424B7579D005ABF39 /* FuzzyCMeans.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,7 +201,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -234,7 +254,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
