@@ -29,55 +29,41 @@ func testReference(vi :[[Double]], reference :[[Double]]) -> Bool {
             test = false;
         }
     }
-    /*
-    for var i:Int in (0..<vi.count){
-        var vix:String = String(vi[i][0])
-        var viy:String = String(vi[i][1])
-        print(String(i) + ": " + vix + ", " + viy);
-        i+=1
-    }
-    */
     return test;
 }
 
 public func CoreTest(){
     let point = Point2D(xi:0.5, yi:0.5)
     var pixel = PointPixel(xi:0, yi:0)
-    print("Test")
+    print("ClusterCoreSwift 1.1.0\n")
     print(String(point.x)+" "+String(point.y))
     pixel=point.toPointPixel(pixelOffset: 100)
     print(String(pixel.x)+" "+String(pixel.y))
 
     let fcm:FuzzyCMeans = FuzzyCMeans(object: object, clusterCount: cluster)
     vi = fcm.determineClusterCenters(random: true, returnPath: false)
-    print("FCM Test ")
     if (testReference(vi :vi, reference :fcmReference)){
-        print("ok")
+        print("FCM Test: ok")
     }
     else {
-        print("error")
+        print("FCM Test: error")
     }
-
 
     var pcm:PossibilisticCMeans = PossibilisticCMeans(object: object, clusterCount: cluster, rep: 1);
     vi = pcm.determineClusterCenters(random: true, returnPath: false);
-    print("PCM Test 1. Durchlauf ")
     if (testReference(vi :vi, reference :pcm1Reference)) {
-        print("ok");
+        print("PCM Test (1st pass): ok");
     }
     else {
-        print("error");
+        print("PCM Test (1st pass): error");
     }
-
 
     pcm = PossibilisticCMeans(object: object, clusterCount: cluster, rep: 2);
     vi = pcm.determineClusterCenters(random: true, returnPath: false);
-    print("PCM Test 2. Durchlauf ")
     if (testReference(vi :vi, reference :pcm2Reference)) {
-        print("ok");
+        print("PCM Test (2nd pass): ok");
     }
     else {
-        print("error");
+        print("PCM Test (2nd pass): error");
     }
-
 }

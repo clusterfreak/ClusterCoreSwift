@@ -35,6 +35,7 @@
 		E93D5BAF24B7579D005ABF39 /* Point2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point2D.swift; sourceTree = "<group>"; };
 		E93D5BB124B7579D005ABF39 /* Java.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Java.swift; sourceTree = "<group>"; };
 		E93EDD6A24BB1770007E4B1C /* ClusterCoreSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClusterCoreSwift.swift; sourceTree = "<group>"; };
+		E98CA77224BB4CF8001B3DF7 /* README.adoc */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.adoc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +52,7 @@
 		E93D5B9324B75409005ABF39 = {
 			isa = PBXGroup;
 			children = (
+				E98CA77224BB4CF8001B3DF7 /* README.adoc */,
 				E93D5B9E24B75409005ABF39 /* ClusterCoreSwift */,
 				E93D5B9D24B75409005ABF39 /* Products */,
 			);
